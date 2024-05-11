@@ -1,0 +1,18 @@
+{
+  "name": "alfa",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^4.17.21",
+    "prisma": "^5.13.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.6.0",
+    "@prisma/client": "^5.13.0",
+    "express": "^4.19.2"
+  }
+}
