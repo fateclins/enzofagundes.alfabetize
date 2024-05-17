@@ -5,7 +5,7 @@ const port: number = 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api', routes);
+app.use('/api/', routes);
 
 const start = async () => {
     try {
