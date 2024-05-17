@@ -1,3 +1,4 @@
+import { relations } from "drizzle-orm";
 import { pgTable, serial, text, varchar, integer, timestamp } from "drizzle-orm/pg-core";
 
 export const users = pgTable('users', {
@@ -38,6 +39,10 @@ export const activityExercises = pgTable('activity_exercises', {
     activityId: integer('activity_id').references(() => activities.id),
     exerciseId: integer('exercise_id').references(() => exercises.id)
 });
+
+export const userRelations = relations(users, ({ one }) => ({
+    profile: one(profiles)
+}))
 
 export const schema = {
     users,
