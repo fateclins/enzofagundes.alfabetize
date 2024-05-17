@@ -1,4 +1,4 @@
-# alfa
+# alfabetize
 
 To install dependencies:
 
