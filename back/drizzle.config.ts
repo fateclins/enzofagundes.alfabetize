@@ -1,12 +1,5 @@
 import { defineConfig } from 'drizzle-kit';
 
-// export default defineConfig({
-//   schema: './db/schema.ts',
-//   out: './drizzle',
-//   dialect: 'postgresql',
-// });
-
-// import { defineConfig } from 'drizzle-kit'
 const connectionString: string | undefined = process.env.DATABASE_URL
 
 if (!connectionString) {
@@ -20,4 +13,5 @@ export default defineConfig({
   dbCredentials: {
     url: connectionString, // your PostgreSQL connection string
   },
+  strict: true, // enable strict mode
 });
