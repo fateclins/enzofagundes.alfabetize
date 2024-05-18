@@ -53,4 +53,4 @@ export const schema = {
     activityExercises
 };
 
-export type TableNames = 'users' | 'profiles' | 'modules' | 'activities' | 'exercises' | 'activityExercises';
+export type SchemaNames = 'users' | 'profiles' | 'modules' | 'activities' | 'exercises' | 'activityExercises';
