@@ -9,13 +9,11 @@ class Model
     protected fillable: string[];
     protected db: PostgresJsDatabase = db;
     protected schema: PgTable<any>;
-    protected table: string;
 
-    constructor(tableName: SchemaNames, table: string)
+    constructor(tableName: SchemaNames)
     {
         this.fillable = [];
         this.schema = schema[tableName];
-        this.table = table;
     }
 
     public async create(data: any): Promise<any>
