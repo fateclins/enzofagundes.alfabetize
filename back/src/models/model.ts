@@ -23,7 +23,7 @@ class Model
         return await this.db.insert(this.schema).values(data).returning();
     }
 
-    public async find(id: number): Promise<any>
+    public async find(id: number | string): Promise<any>
     {
         return await this.db.select().from(this.schema).where(eq((this.schema as any).id, id));
     }
@@ -33,12 +33,12 @@ class Model
         return await this.db.select().from(this.schema);
     }
 
-    public async destroy(id: number): Promise<any>
+    public async destroy(id: number | string): Promise<any>
     {
         return await this.db.delete(this.schema).where(eq((this.schema as any).id, id));
     }
 
-    public async update(id: number, data: any): Promise<any>
+    public async update(id: number | string, data: any): Promise<any>
     {
         return await this.db.update(this.schema).set(data).where(eq((this.schema as any).id, id));
     }
