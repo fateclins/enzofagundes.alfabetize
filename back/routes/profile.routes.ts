@@ -1,11 +1,12 @@
-import ProfileController from "../app/http/controllers/profile.controller";
 import type { Router } from "express";
+import ProfileController from "../src/controllers/profile.controller";
 
-export default function profileRoutes(router: Router) {
-    const profileController = new ProfileController();
-    router.get("/profiles", (req, res) => profileController.index(req, res));
-    router.get("/profiles/:id", (req, res) => profileController.show(req, res));
-    router.post("/profiles", (req, res) => profileController.store(req, res));
-    router.put("/profiles/:id", (req, res) => profileController.update(req, res));
-    router.delete("/profiles/:id", (req, res) => profileController.delete(req, res));
+const profileController = new ProfileController();
+
+export default function profileRoutes (router: Router) {
+    router.get('/profiles', async (req, res) => profileController.index(req, res));
+    router.get('/profiles/:id', async (req, res) => profileController.show(req, res));
+    router.post('/profiles', async (req, res) => profileController.store(req, res));
+    router.put('/profiles/:id', async (req, res) => profileController.update(req, res));
+    router.delete('/profiles/:id', async (req, res) => profileController.destroy(req, res));
 }

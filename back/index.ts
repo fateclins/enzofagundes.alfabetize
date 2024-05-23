@@ -1,15 +1,13 @@
-import express from 'express';
-import router from './routes/api';
-import type { Request, Response } from 'express';
-const app = express();
-const port = 8080;
+import { app, port } from './src/server';
 
-app.use(router);
+const start = async () => {
+    try {
+        app.listen(port, () => {
+            console.log(`Server is running on port ${port}`);
+        });
+    } catch (error) {
+        console.error(error);
+    }
+}
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, World!');
-});
-
-app.listen(port, () => {
-  console.log(`Server started on http://localhost:${port}`);
-});
+start();

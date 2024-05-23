@@ -1,7 +1,15 @@
-# uma docker image para rodar um projeto com bun e express
-FROM oven/bun:1.1.8
+FROM oven/bun:1 as base
 WORKDIR /usr/src/app
+
+FROM base AS install
+RUN mkdir -p /temp/dev
 COPY package.json bun.lockb /temp/dev/
 RUN cd /temp/dev && bun install --frozen-lockfile
+
+FROM base AS prerelease
+COPY --from=install /temp/dev/node_modules node_modules
 COPY . .
-CMD ["bun", "run", "start"]
+
+USER bun
+EXPOSE 3000/tcp
+ENTRYPOINT [ "bun", "run", "src/index.ts" ]
