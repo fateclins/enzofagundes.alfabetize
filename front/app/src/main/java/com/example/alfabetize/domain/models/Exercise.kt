@@ -1,4 +1,4 @@
-package com.example.alfabetize.models
+package com.example.alfabetize.domain.models
 
 class Exercise(
     private var id: Int,

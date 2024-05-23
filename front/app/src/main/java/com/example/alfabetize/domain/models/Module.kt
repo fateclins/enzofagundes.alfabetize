@@ -1,4 +1,4 @@
-package com.example.alfabetize.models
+package com.example.alfabetize.domain.models
 
 class Module(private var id: Int, private var name: String)
 {

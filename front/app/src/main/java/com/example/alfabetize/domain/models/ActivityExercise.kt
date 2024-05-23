@@ -1,4 +1,4 @@
-package com.example.alfabetize.models
+package com.example.alfabetize.domain.models
 
 class ActivityExercise(private var activityId: Int, private var exerciseId: Int)
 {
