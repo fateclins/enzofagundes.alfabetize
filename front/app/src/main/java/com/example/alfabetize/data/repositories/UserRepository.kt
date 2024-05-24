@@ -1,6 +1,6 @@
 package com.example.alfabetize.data.repositories
 
-import com.example.alfabetize.data.datasources.local.UserLocalDataSource
+import com.example.alfabetize.data.datasources.local.implementations.UserLocalDataSource
 import com.example.alfabetize.data.datasources.local.entities.User
 
 class UserRepository(
