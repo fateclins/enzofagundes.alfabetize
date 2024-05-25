@@ -14,5 +14,4 @@ activityRoutes(routes);
 exerciseRoutes(routes);
 profileRoutes(routes);
 moduleRoutes(routes);
-
 export default routes;

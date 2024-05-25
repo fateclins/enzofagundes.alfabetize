@@ -43,7 +43,6 @@ interface ApiService {
     @PUT("api/profiles/{id}")
     fun updateProfile(@Path("id") id: Int, @Body profile: Profile): Call<Profile>
 
-
     @DELETE("api/profiles/{id}")
     fun deleteProfile(@Path("id") id: Int): Call<Void>
 
