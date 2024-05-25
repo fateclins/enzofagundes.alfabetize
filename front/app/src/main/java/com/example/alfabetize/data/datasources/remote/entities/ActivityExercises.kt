@@ -1,6 +1,6 @@
 package com.example.alfabetize.data.datasources.remote.entities
 
-data class ActivityExercise(
+data class ActivityExercises(
     val activityId: Int,
     val exerciseId: Int
 )
