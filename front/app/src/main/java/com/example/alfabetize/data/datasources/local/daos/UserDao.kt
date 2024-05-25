@@ -9,10 +9,10 @@ import com.example.alfabetize.data.datasources.local.entities.User
 
 @Dao
 interface UserDao {
-    @Query("SELECT * FROM user")
+    @Query("SELECT * FROM users")
     fun index(): List<User>
 
-    @Query("SELECT * FROM user WHERE id = :id")
+    @Query("SELECT * FROM users WHERE id = :id")
     fun show(id: Int): User
 
     @Insert

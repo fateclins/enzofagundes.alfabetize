@@ -4,9 +4,9 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "users")
-data class User(
+@Entity(tableName = "exercises")
+data class Exercise(
     @PrimaryKey val id: Int,
-    @ColumnInfo(name = "email") val email: String?,
-    @ColumnInfo(name = "password") val password: String?
+    @ColumnInfo(name = "question") val question: String?,
+    @ColumnInfo(name = "answer") val answer: String?
 )
