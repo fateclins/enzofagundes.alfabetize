@@ -8,7 +8,7 @@
 
 ## App
 
-- [ ]  Implementar DataSource remoto
+- [X]  Implementar DataSource remoto
 - [ ]  Implementar Repository para cada tabela
 
 > E então a camada de Data estará pronta
