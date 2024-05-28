@@ -38,7 +38,9 @@ class Model
 
     public async update(id: number | string, data: any): Promise<any>
     {
-        return await this.db.update(this.schema).set(data).where(eq((this.schema as any).id, id));
+        await this.db.update(this.schema).set(data).where(eq((this.schema as any).id, id));
+        const updatedRecord = await this.db.select().from(this.schema).where(eq((this.schema as any).id, id)).execute();
+        return updatedRecord;
     }
 
     public async leftJoin(table: string, column: string, condition: string): Promise<any>
