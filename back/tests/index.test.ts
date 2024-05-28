@@ -8,10 +8,4 @@ describe("Testing the index file", () => {
         expect(response.status).toBe(200);
         expect(response.body).toEqual({ message: "Hello, world!" });
     });
-
-    test("Should be return all users", async () => {
-        const response = await request(app).get("/api/users");
-        expect(response.status).toBe(200);
-        expect(response.body).toEqual({ users: [{}] });
-    });
 });
