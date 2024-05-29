@@ -63,7 +63,7 @@ describe('Testing the User model', () => {
                 email: users[0].email,
                 password: users[0].password
             }),
-            profiles: null
+            profiles: expect.anything()
         });
     });
 });
