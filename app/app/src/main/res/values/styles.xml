@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red_dark</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!-- Custom AlertDialog Theme -->
+    <style name="CustomAlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/off_white</item>
+        <item name="android:background">@drawable/dialog_background</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/CustomDialogButton</item>
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="CustomDialogButton" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/gray_dark</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/afi_head</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+    </style>
+
+    <style name="AppTheme.Transition" parent="AppTheme">
+        <item name="android:windowEnterTransition">@transition/slide_transition</item>
+        <item name="android:windowExitTransition">@transition/slide_transition</item>
+    </style>
+</resources>

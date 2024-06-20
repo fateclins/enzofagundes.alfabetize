@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Alfabetize</string>
+    <string name="module_activity_title">Módulos</string>
+    <string name="welcome">Bem vindo ao</string>
+    <string name="create_account">Criar conta</string>
+    <string name="login">Entrar</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="confirm_password">Confirme sua senha</string>
+    <string name="password">Senha</string>
+    <string name="email">E-mail</string>
+    <string name="name">Nome</string>
+    <string name="access_module">Ver atividades</string>
+    <string name="type_answer">Digite sua resposta</string>
+    <string name="answer">Responder</string>
+    <string name="access_activity">Fazer atividade</string>
+    <string name="activity_child_module_welcome">Atividades do módulo</string>
+    <string name="text_profile">Perfil</string>
+    <string name="text_module">Módulos</string>
+    <string name="ic_points_description">um icone de raio</string>
+    <string name="afi_image_description">imagem da afi, logo do curso</string>
+    <string name="rectangle">rectangle</string>
+    <string name="txt_sequencia_dias">Sêquencia de dias:</string>
+    <string name="logout">Sair</string>
+    <string name="txt_lesson_completed">Lições concluídas:</string>
+</resources>
