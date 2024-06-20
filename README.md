@@ -25,7 +25,7 @@ A seguir o passo a passo para como colocar o ambiente de desenvolvimento em func
 ### Clone o Repositório
 
 ```powershell
-> git clone *https://github.com/fateclins/enzofagundes.alfabetize.git*
+> git clone https://github.com/fateclins/enzofagundes.alfabetize.git
 ```
 
 ### Faça o setup do back-end
